@@ -22,7 +22,7 @@ class CarCustomiserUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testWhenBoughtTiresAndExhaustPackageOtherTwoUpgradesAreDisabled() throws {
+    func testWhenTiresAndExhaustPackageAreBoughtOtherTwoUpgradesAreDisabled() throws {
         //arrange
         let app = XCUIApplication()
         app.launch()
@@ -34,7 +34,7 @@ class CarCustomiserUITests: XCTestCase {
         XCTAssertEqual(tablesQuery.switches["Drivetrain Package (Cost: 500)"].isEnabled, false)
         XCTAssertEqual(tablesQuery.switches["Fuel Package (Cost: 500)"].isEnabled, false)
         
-       
+               
     }
 
     func testLaunchPerformance() throws {
